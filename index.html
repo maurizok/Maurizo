@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firstjstask</title>
+</head>
+<body>
+<div id="name"></div>
+<div id="course"></div>
+<p>The followings are odd number ranging from 1-200 inclusive:</p>
+
+
+ 
+ 
+ 
+ 
+ <script>
+let firstName ="Maurice Kosisochukwu";
+let lastName = "Oodo";
+document.getElementById("name").innerHTML = "My name is "+lastName + " " + firstName ;
+
+let course = ["HTML", "CSS", "Javascript"];
+document.getElementById("course").innerHTML = "My track is frontend and my courses includes: " + course;
+
+
+let odd;
+for (odd=1;odd <=200;odd++)
+{
+ if (odd%2!==0)
+ document.write (odd + "<br>");
+}
+
+ </script>   
+</body>
+</html>
