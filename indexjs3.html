@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js3 task</title>
+</head>
+<body>
+    <script>
+        
+        function numberCounting(num){
+            let numberCounts = [];
+            let numbersOutput;
+            for(let i =1; i<=num; i++){
+                if(i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+
+                    numbersOutput = "yu-gi-oh";
+
+                }else if(i % 2 === 0 && i % 3 === 0){
+
+                    numbersOutput = "yu-gi";
+
+                }else if(i % 2 === 0 && i % 5 === 0){
+
+                    numbersOutput = "yu-oh";
+
+                }else if(i % 3 === 0 && i % 5 === 0){
+
+                    numbersOutput = "gi-oh"
+
+                }else if(i % 2 === 0){
+
+                    numbersOutput = "yu"
+
+                }else if(i % 3 === 0){
+
+                    numbersOutput = "gi";
+
+                }else if(i % 5 === 0){
+
+                numbersOutput = "oh"
+
+                }else{ numbersOutput = i};
+
+                numberCounts.push(numbersOutput);
+            };
+                console.log(numberCounts);
+                return numberCounts;
+        }
+        numberCounting(100);
+        numberCounting(36);
+        
+    </script>
+</body>
+</html>
